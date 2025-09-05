@@ -11,7 +11,7 @@ function Sh3ller{
     }
     if ($Failure){return}
 	
-	Start-Sleep -Milliseconds 200
+	Start-Sleep -Milliseconds 500
 	$Host.UI.RawUI.FlushInputBuffer()
 
     $global:Connections        = @{}
@@ -106,7 +106,7 @@ function Sh3ller{
 
     function WriteData_TCP {
         param($Data, $Connection)
-		Start-Sleep -Milliseconds 200
+		Start-Sleep -Milliseconds 300
 		$Host.UI.RawUI.FlushInputBuffer()
         try {
             $Connection["Stream"].Write($Data, 0, $Data.Length)
@@ -155,7 +155,7 @@ function Sh3ller{
     }
 
     function Show_Menu {
-		Start-Sleep -Milliseconds 200
+		Start-Sleep -Milliseconds 300
 		$Host.UI.RawUI.FlushInputBuffer()
         Write-Host ""
 		Write-Host " Sh3ller [https://github.com/Leo4j/Sh3ller]" -ForegroundColor DarkCyan
@@ -322,7 +322,7 @@ function Sh3ller{
 					continue
 				}
                 elseif ($choice -match '^\d+$') {
-					Start-Sleep -Milliseconds 200
+					Start-Sleep -Milliseconds 300
 					$Host.UI.RawUI.FlushInputBuffer()
                     $global:closetrigger = $True
                     $connId = [int]$choice
